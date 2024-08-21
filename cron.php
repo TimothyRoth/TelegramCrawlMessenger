@@ -1,7 +1,7 @@
 <?php
 
 /**
- * check how to enable a cronjob on your server
+ * Check how to enable a cronjob on your server (ubuntu example):
  * @link https://askubuntu.com/questions/2368/how-do-i-set-up-a-cron-job
  */
 

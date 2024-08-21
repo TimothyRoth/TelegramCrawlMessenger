@@ -31,8 +31,8 @@
 /**
  * 
  * @description
- * checks if the pdo object is already inside the cache and returning it if thats the case
- * else creating a new instance of pdo and saving it inside the array, then return it
+ * Checks if the PDO object is already inside the cache and returning it if thats the case,
+ * else creating a new instance of pdo and saving it inside the array, then return it.
  * 
  * @return PDO|bool {returns either the PDO Object or false if the connection could not be established} 
  *

@@ -7,7 +7,7 @@
 define( '__APP_ROOT_DIRECTORY__' ,  __DIR__ );
 
 /**
-* Define Telegram API
+* Define Telegram API Settings
 */
 
 define( '__TB_TEST_CHAT_ID__', '<insert Test Token if needed>' );
@@ -22,7 +22,7 @@ define( '__TB_SEND_MESSAGE_ENDPOINT__', 'https://api.telegram.org/bot' . __TB_BO
 define( '__EXAMPLE_ENDPOINT__', '<define your endpoint here>' );
 
 /**
-* Database Connection
+* Database Connection Settings
 */
 
 define( '__DB_HOST__', 'localhost:3306' );
@@ -32,7 +32,9 @@ define( '__DB_USERNAME__', 'insert user' );
 define( '__DB_USERPASSWORD__', 'insert password' );
 
 /**
+* 
 * Database Tables
+*
 * When creating the column in which you want to save the message, think about which datatype makes sense the most
 * to save your message as. If you save it as a varchar consider the length etc. Otherwise you might run into a problem
 * where duplicates appear because you crawl messages that are longer than the db entry you are able to save and therefore

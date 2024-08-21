@@ -41,7 +41,7 @@ function curl_example_endpoint(): array
     $messages = [];
     
     /**
-     * check query syntax here
+     * Check query syntax here:
      * @link https://www.w3.org/TR/xpath-3/
      */
 
@@ -52,7 +52,7 @@ function curl_example_endpoint(): array
     foreach ($nodes as $node) {
 
         /**
-         * check methods and attributes available for the $node object here
+         * Check methods and attributes available for the $node object here:
          * @link https://www.php.net/manual/en/class.domnode.php
          */
 
@@ -68,7 +68,7 @@ function curl_example_endpoint(): array
 
         /**
          * if you want to filter crawled content to contain a specific keyword use this next block and
-         * specify the kewyords under __TB_KEYWORDS__ in config.php. Otherwise delete this passage
+         * specify the kewyords under __TB_KEYWORDS__ in config.php. Otherwise you can delete this passage.
          */
 
         if (does_string_contain(__TB_KEYWORDS__, $message)) {
