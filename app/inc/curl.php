@@ -59,7 +59,7 @@ function curl_example_endpoint(): array
         $message = $node->textContent;
 
         /**
-         * if the message entry can be found inside te log, it will be ignored
+         * If the message entry can be found inside te log, it will be ignored
          */
 
         if (is_message_contained_in_logs($message)) {
@@ -67,8 +67,8 @@ function curl_example_endpoint(): array
         }
 
         /**
-         * if you want to filter crawled content to contain a specific keyword use this next block and
-         * specify the kewyords under __TB_KEYWORDS__ in config.php. Otherwise you can delete this passage.
+         * If you want to filter crawled content to contain a specific keyword use this next block and
+         * specify the kewyords under __TB_KEYWORDS__ inside the config.php. Otherwise you can delete this passage.
          */
 
         if (does_string_contain(__TB_KEYWORDS__, $message)) {
