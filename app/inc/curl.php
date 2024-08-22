@@ -68,12 +68,16 @@ function curl_example_endpoint(): array
 
         /**
          * If you want to filter crawled content to contain a specific keyword use this next block and
-         * specify the kewyords under __TB_KEYWORDS__ inside the config.php. Otherwise you can delete this passage.
+         * specify the kewyords under __TB_KEYWORDS__ inside the config.php. Otherwise you can delete or comment this passage out.
          */
 
         if (does_string_contain(__TB_KEYWORDS__, $message)) {
             $messages[] = $message;
         }
+
+        /**
+         * Check for keywords end.
+         */
 
     }
 
