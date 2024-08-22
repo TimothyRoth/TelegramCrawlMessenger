@@ -9,7 +9,7 @@ require_once __DIR__ . '/config.php';
 require_once __APP_ROOT_DIRECTORY__ . '/app/index.php';
 
 /**
- * If you dont want a token to validate the cronjob, feel free to delete or comment this passage out
+ * If you dont want a token to validate the cronjob, feel free to delete or comment this passage out.
  */
 
 $token = $_GET['token'] ?? '';
@@ -18,6 +18,10 @@ if ($token !== __VALID_TOKEN__) {
     http_response_code(403);
     exit;
 }
+
+/**
+ * Validation end.
+ */
 
 try {
     push_message(__TB_CHAT_ID__, curl_endpoints());
