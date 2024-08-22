@@ -9,7 +9,7 @@ require_once __DIR__ . '/config.php';
 require_once __APP_ROOT_DIRECTORY__ . '/app/index.php';
 
 /**
- * If you dont want a token to validate the cronjob operation, feel free to delete or comment this passage out
+ * If you dont want a token to validate the cronjob, feel free to delete or comment this passage out
  */
 
 $token = $_GET['token'] ?? '';
