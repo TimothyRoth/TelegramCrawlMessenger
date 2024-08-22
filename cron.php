@@ -10,7 +10,7 @@ require_once __APP_ROOT_DIRECTORY__ . '/app/index.php';
 
 $token = $_GET['token'] ?? '';
 
-if ($token !== $valid_token) {
+if ($token !== __VALID_TOKEN__) {
     http_response_code(403);
     exit;
 }
