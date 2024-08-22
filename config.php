@@ -20,6 +20,7 @@ define( '__TB_SEND_MESSAGE_ENDPOINT__', 'https://api.telegram.org/bot' . __TB_BO
  */
 
 define( '__EXAMPLE_ENDPOINT__', '<define your endpoint here>' );
+define( '__VALID_TOKEN__', '<define valid token here>' );
 
 /**
 * Database Connection Settings
